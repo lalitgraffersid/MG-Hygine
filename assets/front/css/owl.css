@@ -1,0 +1,22 @@
+html,
+body{
+  height: 100%;
+}
+.owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot{
+    display: none;
+}
+.aligner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    width: 25px;
+    color: #fff;
+    height: 25px;
+    background-color: #ababab;
+}
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
