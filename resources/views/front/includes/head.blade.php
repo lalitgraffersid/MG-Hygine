@@ -53,7 +53,37 @@ $current_route = \Request::route()->getName();
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css'>
   <link href="{{asset('assets/front/css/owl.css')}}" rel="stylesheet" />
 
+<style>
 
+    
+
+
+.dropdown {
+  position: relative;
+  display: block !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+</style>
 </head>
 
 <body>
@@ -69,47 +99,7 @@ $current_route = \Request::route()->getName();
                         Call: &nbsp; <a href="#"><span> {{$settings->phone}}</span></a>
                     </div>
     
-                    <div class="user_option_box">
-                        <div id="nav">
-                            <a class="dropdown-toggle cart-link" href="#">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <span>Cart</span><span class="nu">{{count($carts)}}</span>
-                            </a>
-                            @if(count($carts)>0)
-
-                            
-                            <ul class="dropdown czrt_link">
-                                <div class="c_drop">
-                                @foreach($carts as $cart)
-                                <?php 
-                                $product = DB::table('products')->where('id',$cart->product_id)->first();
-                                $productImages = DB::table('product_images')->where('product_id',$cart->product_id)->first();
-                                ?>
-                                                           
-                                <li>
-                                    <button class="removeCart" data-id="{{$cart->id}}">X</button>
-                                    <div class="cart-item-panel">
-                                        <div class="cart-item"><a href="{{route('productDetails',$product->id)}}"><img src="{{url('/public/admin/clip-one/assets/products/original')}}/{{$productImages->image}}" alt="" class="img-fluid"></a></div>
-                                        <div class="cart-title">
-                                            <a href="#">{{$product->title}}</a>
-                                            <span>{{$cart->quantity}} × €{{$cart->price}}</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                @endforeach
-                                 </div>
-
-                                 <div class="pointors-panel">
-                                    <h4>Subtotal: <span>€{{number_format($cartSubtotal,2)}}</span></h4>
-                                    <ul class="cart-pointors">
-                                        <li><a href="{{route('cart')}}">View cart</a></li>
-                                    </ul>
-                                </div>
-                            </ul>
-                            @endif  
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -131,10 +121,23 @@ $current_route = \Request::route()->getName();
                             <li class="nav-item {{$current_route == 'about_us' ? 'active' : ''}}">
                                 <a class="nav-link {{$current_route == 'about_us' ? 'cont' : ''}}" href="{{route('about_us')}}"> ABOUT US</a>
                             </li>
-                            <li class="nav-item {{$current_route == 'our_brands' ? 'active' : ''}}">
-                                <a class="nav-link <?php if($current_route == 'our_brands' || $current_route == 'products' || $current_route == 'productDetails'){echo 'cont';} ?>" href="{{route('our_brands')}}">PRODUCTS</a>
-                            </li>
-                          
+                            
+                            <li class="dropdown">
+  <a class="dropbtn nav-link {{$current_route == 'our_brands' ? 'cont' : ''}}" href="{{route('our_brands')}}">PRODUCTS</a>
+
+  <ul class="dropdown-content" style="left:0;">
+   <li> <a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/greyland-chemical">Greyland Chemical</a></li>
+   <li><a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/taski">Taski	</a></li>
+   <li> <a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/vileda">Vileda</a></li>
+   <li><a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/mp-hygiene-products">MP Hygiene Products</a></li>
+   <li> <a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/diversey">Diversey</a></li>
+   <li><a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/tork">Tork</a></li>
+   <li> <a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/paper-products">Paper Products</a></li>
+   <li><a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/mopping-systems">Mopping System's</a></li>
+   <li> <a href="https://testdmcconsultancy.com/demo/mg_hygiene/products/sacksbin-liners-bins">Sacks,Bin Liners & Bins	</a></li>
+   
+</ul>
+</li>
                             <li class="nav-item {{$current_route == 'our_environment' ? 'active' : ''}}">
                                 <a class="nav-link {{$current_route == 'our_environment' ? 'cont' : ''}}" href="{{route('our_environment')}}">OUR ENVIROMENT</a>
                             </li>

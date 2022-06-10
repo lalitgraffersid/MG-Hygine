@@ -159,14 +159,14 @@ Enviroment</h1>
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <div class="tips">
-                    <ul>
-                        <li class="cl">Cleaning Tips</li>
-                        <li class="cont">Contact Us</li>
-                        <div class="clear"></div>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
+                <!--<div class="tips">-->
+                <!--    <ul>-->
+                <!--        <li class="cl">Cleaning Tips</li>-->
+                <!--        <li class="cont">Contact Us</li>-->
+                <!--        <div class="clear"></div>-->
+                <!--    </ul>-->
+                <!--    <div class="clear"></div>-->
+                <!--</div>-->
             </div>
         </div>
         

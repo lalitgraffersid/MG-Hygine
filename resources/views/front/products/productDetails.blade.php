@@ -16,6 +16,10 @@
   flex-flow: row wrap; */
 }
 
+.action.cart-div {
+    display: none;
+}
+
   </style>
 
  <!-----slider----->
@@ -25,13 +29,14 @@
 
 
 <!-- ///////////////////////////////////// -->
-<section class="hes_derimg">
+<section class="hes_derimg product">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="headeing_image">
-                    <h4>Product Details</h4>
-                    <p><strong><a href="{{route('home')}}">Home ></a></strong> <span>Product Details</span></p>
+                    						<h3 class="product-title">{{$result->title}}</h3>
+
+                    <p><strong><a href="{{route('home')}}">Home ></a></strong> <span>{{$result->title}}</span></p>
                 </div>
             </div>
         </div>
@@ -121,10 +126,10 @@
 							<input type="hidden" name="color" id="color_input" >
 							<input type="hidden" name="price" id="price_input" >
 						@else
-							<h4 class="price">Price: <span>€{{$result->price}}</span></h4>
+							<!--<h4 class="price">Price: <span>€{{$result->price}}</span></h4>-->
 							<input type="hidden" name="size" id="size_input" value="">
 							<input type="hidden" name="color" id="color_input" value="">
-							<input type="hidden" name="price" id="price_input" value="{{$result->price}}">
+							<!--<input type="hidden" name="price" id="price_input" value="{{$result->price}}">-->
 						@endif
 						
 						<div class="action cart-div">
@@ -137,7 +142,7 @@
 								  <span class="decrese">+</span>
 								</button>
 							</div>
-							<a class="add-to-cart btn btn-default add2Cart" href="javascript:void(0)" data-id="{{$result->id}}">Add to cart</a>
+							<!--<a class="add-to-cart btn btn-default add2Cart" href="javascript:void(0)" data-id="{{$result->id}}">Add to cart</a>-->
 						</div>
 					</div>
 				</div>
@@ -157,7 +162,7 @@
       	<div class="row">
       		@foreach($related_products as $product)
       		<?php 
-           		$productImages = DB::table('product_images')->where('product_id',$result->id)->get();
+           		$productImages = DB::table('product_images')->where('product_id',$product->id)->get();
            	?>
 	        	<div class="col-md-3">
 					<div class="product-grid__product-wrapper">
@@ -173,9 +178,9 @@
                              	$max = max($yourArr);
                              	$min = min($yourArr);
                           	?>
-                             	<span class="product-grid__price">€{{$min}} - €{{$max}}</span>
+                             	<!--<span class="product-grid__price">€{{$min}} - €{{$max}}</span>-->
                           	@else
-                             	<span class="product-grid__price">€{{$result->price}}</span>
+                             	<!--<span class="product-grid__price">€{{$result->price}}</span>-->
                           	@endif
 							<div class="product-grid__extend-wrapper cart-div">
 								<div class="product-grid__extend">

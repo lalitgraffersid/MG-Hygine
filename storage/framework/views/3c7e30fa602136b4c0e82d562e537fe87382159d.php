@@ -54,7 +54,7 @@ a.nav-link.bg_c.py-0:hover{
     color: #fff!important;
 }
 </style>
-   <section class="hes_derimg">
+   <section class="hes_derimg product">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -91,9 +91,9 @@ a.nav-link.bg_c.py-0:hover{
                                  $max = max($yourArr);
                                  $min = min($yourArr);
                               ?>
-                                 <span class="product-grid__price">€<?php echo e($min); ?> - €<?php echo e($max); ?></span>
+                                 <!--<span class="product-grid__price">€<?php echo e($min); ?> - €<?php echo e($max); ?></span>-->
                               <?php else: ?>
-                                 <span class="product-grid__price">€<?php echo e($result->price); ?></span>
+                                 <!--<span class="product-grid__price">€<?php echo e($result->price); ?></span>-->
                               <?php endif; ?>
             						<div class="product-grid__extend-wrapper cart-div">
             							<div class="product-grid__extend">
