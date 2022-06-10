@@ -28,7 +28,6 @@
                     <h5>Our Brands</h5>
                     <ul>
                         <li><a href="<?php echo e(route('our_brands')); ?>">Products</a></li>
-                        <li><a href="#">Cleaning Tips</a></li>
                         <li><a href="<?php echo e(route('our_environment')); ?>">Our Environment</a></li>
                     </ul>
                 </div>

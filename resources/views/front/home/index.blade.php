@@ -2,7 +2,7 @@
 @section('content')
 
     <!-- slider section -->
-    <section class="slider_section ">
+    <section class="slider_section topslide">
     <div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
@@ -16,27 +16,21 @@
   <div class="carousel-inner">
    
     <div class="carousel-item active">
-  <img class="s_li_der" src="{{asset('assets/front/images/img/slide1.png')}}" alt="s1lde1">
+  <img class="s_li_der" src="{{asset('assets/front/images/img/banner.png')}}" alt="s1lde1">
   <div class="carousel-caption">
-    <h3>MG Hygiene and Cleaning Supplies</h3>
-    <p>Suppliers of quality hygiene and catering products to the Cleaning,<br>
-Catering and Hospitality industries</p>
+    
   </div>
 </div>
      <div class="carousel-item">
-  <img  class="s_li_der" src="{{asset('assets/front/images/img/slide1.png')}}" alt="s1lde1">
+  <img  class="s_li_der" src="{{asset('assets/front/images/img/banner.png')}}" alt="s1lde1">
   <div class="carousel-caption">
-    <h3>MG Hygiene and Cleaning Supplies</h3>
-    <p>Suppliers of quality hygiene and catering products to the Cleaning,<br>
-Catering and Hospitality industries</p>
+  
   </div>
 </div>
    <div class="carousel-item">
-  <img  class="s_li_der" src="{{asset('assets/front/images/img/slide1.png')}}" alt="s1lde1">
+  <img  class="s_li_der" src="{{asset('assets/front/images/img/banner.png')}}" alt="s1lde1">
   <div class="carousel-caption">
-    <h3>MG Hygiene and Cleaning Supplies</h3>
-    <p>Suppliers of quality hygiene and catering products to the Cleaning,<br>
-Catering and Hospitality industries</p>
+   
   </div>
 </div>
   </div>
@@ -68,8 +62,8 @@ Catering and Hospitality industries</p>
 -->
       <div class="row">
         <div class="col-sm-6 col-lg-6">
-          <div class="about">
-         <img src="{{asset('assets/front/images/img/aboout.png')}}" alt="">  
+          <div style="text-align: center;" class="about">
+         <img style="width: 30%;" src="{{asset('assets/front/images/img/logo.png')}}" alt="">  
           </div>
         </div>
         <div class="col-sm-6 col-lg-6">
@@ -106,7 +100,7 @@ Catering and Hospitality industries</p>
       <div class="row">
          
          @foreach($results as $result)
-         <div class="col-md-3">
+         <div class="col-md-4">
             <div class="box_our ">
                <div class="image">
                    <a href="{{route('products',$result->brand_slug)}}">

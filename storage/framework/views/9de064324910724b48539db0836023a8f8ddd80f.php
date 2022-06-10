@@ -134,9 +134,7 @@ $current_route = \Request::route()->getName();
                             <li class="nav-item <?php echo e($current_route == 'our_brands' ? 'active' : ''); ?>">
                                 <a class="nav-link <?php if($current_route == 'our_brands' || $current_route == 'products' || $current_route == 'productDetails'){echo 'cont';} ?>" href="<?php echo e(route('our_brands')); ?>">PRODUCTS</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">CLEANING TIPS</a>
-                            </li>
+                          
                             <li class="nav-item <?php echo e($current_route == 'our_environment' ? 'active' : ''); ?>">
                                 <a class="nav-link <?php echo e($current_route == 'our_environment' ? 'cont' : ''); ?>" href="<?php echo e(route('our_environment')); ?>">OUR ENVIROMENT</a>
                             </li>

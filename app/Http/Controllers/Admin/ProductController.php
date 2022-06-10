@@ -376,7 +376,8 @@ class ProductController extends Controller
 	        if (array_diff_key($tableHeader,$productArr[$i])) {
 	          	$msg_error="Wrong format, Please check sample format first!";
 	      		$request->session()->flash('msg_error', $msg_error);
-	      		return redirect()->route('importCustomer'); 
+	      		// return redirect()->route('importCustomer'); 
+				  return redirect('admin/products/index');
 	        }else{
 	          $data[] = [
 	            'brand_id' => $this->checkBrand($productArr[$i]['Brand Name'],$productArr[$i]['Brand Image']),

@@ -808,4 +808,10 @@ a:focus {
 .footer_section p a {
   color: inherit;
 }
+
+.topslide div#demo {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

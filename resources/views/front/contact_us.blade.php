@@ -81,7 +81,7 @@ span.text:hover {
         
 </style>
 
-<section class="hes_derimg">
+<section class="hes_derimg cimg">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

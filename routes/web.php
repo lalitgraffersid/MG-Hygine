@@ -30,7 +30,7 @@ Route::get('/clear-cache', function() {
 });
 
 
-Route::get('/admin', array('as'=>'admin.login','uses' => 'Admin\LoginController@index'));
+Route::get('/admin_login', array('as'=>'admin.login','uses' => 'Admin\LoginController@index'));
 Route::POST('/admin/dologin', 'Admin\LoginController@postLogin');
 
 Route::group(['prefix'=> 'admin','middleware' => ['auth']] , function(){

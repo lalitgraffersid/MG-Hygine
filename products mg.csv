@@ -1,0 +1,4 @@
+id,brand_id,category_id,title,title_slug,description,variants,sizes,colors,prices,price,image,status,created_at,updated_at
+5,1,1,Product mg 1,product-mg-1,slcnjasncjasncjasncjasncjasncjnasjcnsajcndsjncj saj ncjiasncjnasjicnm,0,,,,100,NULL,1,5/15/2021 16:11,5/15/2021 16:11
+6,2,3,Product mg3,product-mg-3,lksvmksdmcksdmcksdnkjc dsvckjsd njc dsjc njsd cj dsnjc,1,"Small,Medium,Large","Black,Black,Blue","100,200,300",0,NULL,1,5/15/2021 16:29,5/15/2021 16:52
+7,3,4,Mg Floor Cleaner,mg-floor-cleaner,This is test description,1,"1 kg,1 kg","blue,black","1000,90",0,NULL,1,5/18/2021 9:07,5/18/2021 9:07

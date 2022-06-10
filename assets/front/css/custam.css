@@ -237,7 +237,7 @@ a.nav-link.cont {
 }
 /*=======enverment========*/
 .enverment{
-    background-image: url(../images/img/enverment.png);background-size: cover;
+    background-image: url(../images/img/our-environment.png);background-size: cover;
     background-position: center;    height: 650px;
 }
 .captcha_span img {
@@ -285,7 +285,7 @@ h2.o_r_brand.pt-0.pb-3 {
 }
 
 .enverment_inner p {
-    color: #fff;
+    color: #288fd3;
     font-size: 26px;
     font-style: italic;
     /* font-weight: 600; */
@@ -301,6 +301,12 @@ h2.o_r_brand.pt-0.pb-3 {
         letter-spacing: 6px;
     font-weight: 900;
     text-transform: uppercase;
+}
+.hes_derimg.env {
+    background-image: url(../images/img/env.png);
+}
+.hes_derimg.cimg {
+    background-image: url(../images/img/contact.png);
 }
 /*=======enverment========*/
 .cart-pointors a:hover{
@@ -365,6 +371,18 @@ strong.cl {
 .hes_derimg{
     background-image: url(../images/img/header.png)
 }
+.hes_derimg.about {
+    background-image: url(../images/img/about-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hes_derimg.product {
+    background-image: url(../images/img/product-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .headeing_image h4 {
     color: #fff;
     font-size: 45px;

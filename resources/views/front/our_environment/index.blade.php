@@ -93,13 +93,13 @@ section#gallery {
 } 
 </style>
 
-<section class="hes_derimg">
+<section class="hes_derimg env">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="headeing_image">
                     <h4>Our Environment</h4>
-                    <p><strong><a href="{{route('home')}}">Home ></a></strong> <span>Our Environment</span></p>
+                    <p><strong><a style="color: #fff;" href="{{route('home')}}">Home ></a></strong> <span>Our Environment</span></p>
                 </div>
             </div>
         </div>
@@ -124,31 +124,31 @@ section#gallery {
     </div>
 </section>
 
-<section id="gallery">
-    <div class="container">
-        <div id="image-gallery">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="heading_container heading_center">
-                        <h2 class="o_r_brand enver">Environment Gellary</h2>
-                    </div>
-                </div>
+<!--<section id="gallery">-->
+<!--    <div class="container">-->
+<!--        <div id="image-gallery">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12">-->
+<!--                    <div class="heading_container heading_center">-->
+<!--                        <h2 class="o_r_brand enver">Environment Gellary</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
             
-                @foreach($images as $image)
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="{{ url('/public/admin/clip-one/assets/our_environment/original') }}/{{$image->image}}"><img src="{{ url('/public/admin/clip-one/assets/our_environment/original') }}/{{$image->image}}" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+<!--                @foreach($images as $image)-->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">-->
+<!--                    <div class="img-wrapper">-->
+<!--                        <a href="{{ url('/public/admin/clip-one/assets/our_environment/original') }}/{{$image->image}}"><img src="{{ url('/public/admin/clip-one/assets/our_environment/original') }}/{{$image->image}}" class="img-responsive"></a>-->
+<!--                        <div class="img-overlay">-->
+<!--                            <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                @endforeach-->
 
-            </div>
-        </div>
-    </div>
-</section>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 @endsection
 

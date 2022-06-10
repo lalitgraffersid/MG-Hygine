@@ -3,7 +3,7 @@
 
 
 
-<section class="hes_derimg">
+<section class="hes_derimg product">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -27,7 +27,7 @@
     <div class="row">
 
     	@foreach($results as $result)
-        <div class="col-md-3">
+        <div class="col-md-4">
           	<div class="box_our ">
            		<div class="image test">
            		    <a href="{{route('products',$result->brand_slug)}}">
